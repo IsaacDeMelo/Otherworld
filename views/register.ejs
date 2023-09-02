@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Register</title>
+    <style>
+        body{
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            overflow: hidden;
+            height: 100vh; 
+            background-image: url("https://www.10wallpaper.com/wallpaper/1366x768/1207/Green_Forest_Nature-Nature_Landscape_Wallpaper_1366x768.jpg");
+            background-size: cover;
+            
+        }
+        form{
+            width: 90vw;
+            border: 1px solid black;  
+            padding: 30px;
+            border-radius: 10px; 
+            background-image: linear-gradient(to bottom right, rgb(137, 73, 197), rgb(94, 36, 153));
+            color: white; 
+            box-shadow: 6px 7px 20px 0px black;
+            display: flex; 
+            align-items: center;
+            flex-direction: column;
+        }
+        .shadow{
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: absolute; 
+            height: 100%; 
+            width: 100%; 
+            background-color: rgba(0, 0, 0, 0.418);
+        }
+        code{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shadow">
+        <form method="post" action="/register">
+        <h2>Registro</h2>
+        <div class="mb-3" style="width: 100%;">
+            <label for="exampleFormControlInput1" class="form-label">Username</label>
+            <input type="text" name="username" class="form-control" id="exampleFormControlInput1"
+                placeholder="username">
+        </div>
+        <div class="mb-3" style="width: 100%;">
+            <label for="exampleFormControlInput1" class="form-label">Perfil (Opcional)</label>
+            <input type="perfil" name="perfil" class="form-control" id="exampleFormControlInput1"
+                placeholder="perfil">
+        </div>
+        <div class="mb-3" style="width: 100%;">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" name="email" class="form-control" id="exampleFormControlInput1"
+                placeholder="name@example.com">
+        </div>
+        <div class="mb-3" style="width: 100%;">
+            <label for="exampleFormControlInput1" class="form-label">Password</label>
+            <input type="password" name="password" class="form-control" id="exampleFormControlInput1"
+                placeholder="password">
+        </div>
+        <button type="submit" class="btn btn-outline-primary">Enviar</button>
+        <br>
+        <code>Já tem conta? <a href="/welcome">Faça Login</a></code>
+    </form>
+</div>
+</body>
+
+</html>

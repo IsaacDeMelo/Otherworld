@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>OTHERWORLD</title>
+    <style>
+        body {
+            background-image: url("background.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        nav {
+            position: fixed;
+            width: 100%;
+            height: 100px;
+            box-shadow: 17px 11px 20px 4px black;
+            display: flex;
+            align-items: center;
+            color: white;
+            background-color: rgb(36, 36, 36);
+            z-index: 2;
+        }
+
+        .title {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-left: 30px;
+            border-left: 3px solid white;
+            border-right: 3px solid white;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .shadow {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.61);
+            
+        }
+
+        span {
+            width: 80%;
+            margin: 30px;
+            height: 300px;
+            background-color: white;
+            border: 3px solid black;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: fixed;
+            top: 50px;
+            display: none;
+
+        }
+
+        code {
+            margin: 10px;
+            color: black;
+            font-weight: bolder;
+        }
+        .subnav{
+            position: fixed; 
+            width: 100%;
+            height: 70px;
+            bottom: 0px;
+            background-color: rgb(36, 36, 36);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+        .btn {
+            margin: 20px;
+        }
+        content{
+            background-color: white;
+    
+            text-align: center;
+            border-radius: 10px;
+        }
+        /* Media Query para telas menores */
+        @media screen and (max-width: 768px) {
+            nav {
+                justify-content: center;
+                /* Centraliza os elementos horizontalmente */
+            }
+
+            .title {
+                margin: 0;
+            }
+        }
+        h5{
+            margin-left: 20px;
+            margin-right: 20px; 
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="title">
+            <h3>Otherworld Databook</h3>
+            <h6>Sessão 3</h6>
+        </div>
+    </nav>
+    <div class="shadow title" style="border: none;">
+        <content style="margin-top: 125px;">
+            <img src="https://i.pinimg.com/564x/2a/b5/01/2ab501d72196923b8f838137c4399c03.jpg" style="width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+            
+            <h1 style="margin-top: 15px;">Bem vindo!</h1> 
+            <h5>Essa é a central de informações da sessão 3 de Otherworld!</h4> 
+            <h5>Logo abaixo da sua tela tem uma barra com cinco botões. Eles são respectivamente: Academia, Magias, Pesquisa, Monstros e Rank.</h4>
+            <h5>Fique a vontade para explorar o site, até mais!</h5>
+            <img src="https://i.pinimg.com/564x/9c/4b/ac/9c4bac55f1904ca2621ba6839195ec68.jpg" style="width: 100%; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; margin-bottom: 50px;">
+        </content>
+        <div class="subnav">
+            <a href=""><img style="width: 35px" src="escola.png"></a>
+            <a href=""><img style="width: 35px" src="magia.png"></a>
+            <a href="/pesquisa"><img style="padding: 5px; border: 2px solid white; border-radius: 50px" src="lupa.png"></a>
+            <a href=""><img style="width: 35px" src="raças.png"></a>
+            <a href=""><img style="width: 35px" src="rank.png"></a>
+        </div>
+    </div>
+    <script>
+        function deleteSpan() {
+            document.querySelector("span").style.display = "none"
+        }
+
+    </script>
+</body>
+
+</html>
